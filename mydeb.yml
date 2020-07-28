@@ -1,0 +1,7 @@
+FROM debian:latest
+
+RUN apt-get -y update && apt-get -y install ssh net-tools tcpdump telnet
+
+EXPOSE 22
+
+CMD [ "/bin/bash", "-i" ]
